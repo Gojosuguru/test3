@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrics Audio Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+        background-image: url('saturn.png'); /* Ganti 'gambar-latar-belakang.jpg' dengan URL atau path ke gambar yang Anda inginkan */
+        background-size: cover; /* Membuat gambar latar belakang menutupi seluruh halaman */
+        background-position: center; /* Mengatur posisi gambar latar belakang ke tengah */
+        background-repeat: no-repeat; /* Mencegah gambar latar belakang diulang */
+        /* Opsi tambahan, misalnya:
+        background-color: #f0f0f0; // Warna latar belakang jika gambar tidak tersedia atau tidak terlihat
+        */
+        height: 100vh;
+        margin: 0; /* Menghilangkan margin bawaan browser */
+        padding: 0; /* Menghilangkan padding bawaan browser */
+    }
+    </style>
+</head>
+<body>
+    <div id="audio-container">
+        <audio controls id="audio-player">
+            <source src="sweetchild.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div id="lyrics-container">
+        <p id="lyrics">These are the lyrics of the song</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
